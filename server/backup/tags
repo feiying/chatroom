@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.7	//
+DataBasePath	maint.c	/^char DataBasePath[256];$/;"	v
+IntToString	parse_command.c	/^char *IntToString(char a[], int i)$/;"	f
+MAXLEN	chat.c	4;"	d	file:
+MAXLEN	user_reg.c	3;"	d	file:
+MAXLINE	list_handler.c	3;"	d	file:
+MAXLINE	maint.c	4;"	d	file:
+NODE	link.c	/^user_link NODE(pthread_t tid,int connfd, char user_name[], int status, user_link next)$/;"	f
+_SERVER_	server.h	16;"	d
+_SERVER_	serverinit.h	16;"	d
+__LINK_H__	link.h	3;"	d
+add_user_list	list_handler.c	/^int add_user_list(int connfd, char *username, int status)$/;"	f
+chat	chat.c	/^int chat(struct user_connect *p)$/;"	f
+chatrecord_mutex	maint.c	/^pthread_mutex_t chatrecord_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+cmd	server.h	/^	char cmd[8];$/;"	m	struct:command
+cmd	serverinit.h	/^	char cmd[8];$/;"	m	struct:command
+command	server.h	/^struct command{$/;"	s
+command	serverinit.h	/^struct command{$/;"	s
+connfd	link.h	/^	int connfd;$/;"	m	struct:node
+connfd	server.h	/^	int connfd;$/;"	m	struct:user_connect
+connfd	serverinit.h	/^	int connfd;$/;"	m	struct:user_connect
+data	server.h	/^	char data[160];$/;"	m	struct:command
+data	serverinit.h	/^	char *data;$/;"	m	struct:command
+database_mutex	maint.c	/^pthread_mutex_t database_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+del_user_list	list_handler.c	/^int del_user_list(int connfd)$/;"	f
+delete_node	link.c	/^int delete_node(user_link t,int connfd)$/;"	f
+dest	server.h	/^	char dest[30];$/;"	m	struct:command
+dest	serverinit.h	/^	char dest[50];$/;"	m	struct:command
+distory_list	link.c	/^user_link distory_list(const user_link t)$/;"	f
+fp	maint.c	/^FILE *fp;$/;"	v
+getconf	serinit.c	/^int getconf(char *str,short *port,char *ChatRecordPath)$/;"	f
+init_list	link.c	/^user_link init_list()$/;"	f
+insert_node	link.c	/^user_link insert_node(user_link t,pthread_t tid, int connfd, char user_name[], int status)$/;"	f
+ip	server.h	/^	char ip[16];$/;"	m	struct:user_connect
+ip	serverinit.h	/^	char ip[16];$/;"	m	struct:user_connect
+is_in_link	link.c	/^int is_in_link(user_link t, char *user_name)$/;"	f
+main	client.c	/^int main(int argc, char * argv[])$/;"	f
+main	client_mutex.c	/^int main(int argc, char * argv[])$/;"	f
+main	maint.c	/^int main(void)$/;"	f
+mutex_flag	client_mutex.c	/^static char mutex_flag=0;$/;"	v	file:
+my_read	parse_command.c	/^int my_read(int connfd, char *buf, int buf_size)$/;"	f
+my_write	parse_command.c	/^int my_write(int connfd, char *data, int n)$/;"	f
+myctime	chat.c	/^struct tm *myctime()$/;"	f
+name_list	maint.c	/^user_link name_list;$/;"	v
+name_list_mutex	maint.c	/^pthread_mutex_t name_list_mutex = PTHREAD_MUTEX_INITIALIZER;$/;"	v
+next	link.h	/^	user_link next;$/;"	m	struct:node
+node	link.h	/^struct node $/;"	s
+parse_command	parse_command.c	/^int parse_command(struct command *cmdline,char *buf)$/;"	f
+parse_data	user_reg.c	/^int parse_data(char *data, char u_name[], char password[])$/;"	f
+refresh	list_handler.c	/^int refresh()$/;"	f
+s_mutex	client.c	/^pthread_mutex_t s_mutex=PTHREAD_MUTEX_INITIALIZER;$/;"	v
+s_mutex	client_mutex.c	/^pthread_mutex_t s_mutex=PTHREAD_MUTEX_INITIALIZER;$/;"	v
+ser_bind	serinit.c	/^void ser_bind(int listenfd,char *ChatRecordPath)$/;"	f
+show_list	link.c	/^void show_list(user_link t)$/;"	f
+source	server.h	/^	char source[30];$/;"	m	struct:command
+source	serverinit.h	/^	char source[50];$/;"	m	struct:command
+status	link.h	/^	int status; $/;"	m	struct:node
+tfn	maint.c	/^void *tfn(void* arg)$/;"	f
+thr_read	client.c	/^void *thr_read(void *arg)$/;"	f
+thr_read	client_mutex.c	/^void *thr_read(void *arg)$/;"	f
+thr_write	client.c	/^void *thr_write(void *arg)$/;"	f
+thr_write	client_mutex.c	/^void *thr_write(void *arg)$/;"	f
+tid	link.h	/^	pthread_t tid;$/;"	m	struct:node
+user_connect	server.h	/^struct user_connect{$/;"	s
+user_connect	serverinit.h	/^struct user_connect{$/;"	s
+user_link	link.h	/^typedef struct node *user_link;$/;"	t	typeref:struct:node
+user_login	user_login.c	/^int user_login(const char *data,char *username)$/;"	f
+user_name	link.h	/^	char user_name[30];$/;"	m	struct:node
+user_reg	user_reg.c	/^int user_reg(int connfd, char *data)$/;"	f
+write_chat_record	chat.c	/^int write_chat_record(struct command *cmdline,char *ip)$/;"	f
